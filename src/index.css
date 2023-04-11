@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply xl:max-w-[1280px] w-full sm:px-[62px] px-[24px] py-[24px] my-0 mx-auto;
+  }
+
+  .text-header {
+    @apply font-openSans text-3xl font-semibold tracking-tight;
+  }
+
+  .text-title {
+    @apply font-openSans text-lg font-semibold tracking-tight;
+  }
+
+  .text-button {
+    @apply font-openSans text-base font-normal text-white;
+  }
+
+  .text-primary {
+    @apply font-openSans text-base font-normal;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.card {
+  transition: translate ease-in-out 100ms, box-shadow ease-in-out 100ms;
+}
+
+.card:hover,
+.card:focus {
+  translate: 0 -5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.new-note-input {
+  border: 1px solid #ced4da;
+}
+
+.text-area-container {
+  padding: 0.35rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  display: block;
+  width: 100%;
+}
